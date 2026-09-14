@@ -41,8 +41,8 @@ Output: [0]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.8 MB (beats 82.75%)  
-**Submitted:** 2026-09-14T18:22:23.592Z  
+**Memory:** 24 MB (beats 19.38%)  
+**Submitted:** 2026-09-14T18:27:35.134Z  
 
 ```cpp
 class Solution {
@@ -51,7 +51,7 @@ public:
         
         int sz = nums.size();
 
-        for(int i = 0,j = i  ; j < sz; j++)
+        for(int i = 0,j = 0  ; j < sz; j++)
         {
             if(nums[j] != 0 )
             {
