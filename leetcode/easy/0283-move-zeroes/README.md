@@ -40,28 +40,26 @@ Output: [0]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 177 ms (beats 5.08%)  
-**Memory:** 23.8 MB (beats 55.48%)  
-**Submitted:** 2026-09-14T18:21:42.986Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 23.8 MB (beats 82.75%)  
+**Submitted:** 2026-09-14T18:22:23.592Z  
 
 ```cpp
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
         
-        for(int i = 0, j = i; i < nums.size() ; i++)
+        int sz = nums.size();
+
+        for(int i = 0,j = i  ; j < sz; j++)
         {
-            if(nums[i] != 0)
+            if(nums[j] != 0 )
             {
-                swap(nums[i],nums[j]);
-                j++;
+                swap(nums[i], nums[j]);
+                i++;
             }
         }
 
-        for(auto x : nums)
-        {
-            cout << x << " ";
-        }
     }
 };
 ```
