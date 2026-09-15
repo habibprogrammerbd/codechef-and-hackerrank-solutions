@@ -41,15 +41,19 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 17.77%)  
-**Memory:** 97.4 MB (beats 26.26%)  
-**Submitted:** 2026-09-15T09:57:08.277Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 97.5 MB (beats 7.17%)  
+**Submitted:** 2026-09-15T10:07:01.505Z  
 
 ```cpp
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
+
         int min_val = prices[0];
         int max_val = 0;
         int ans = 0;
