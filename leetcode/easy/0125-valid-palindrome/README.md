@@ -50,12 +50,16 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 **Language:** C++  
 **Runtime:** 0 ms  
 **Memory:** 8 MB  
-**Submitted:** 2026-09-16T05:13:48.159Z  
+**Submitted:** 2026-09-16T05:24:59.776Z  
 
 ```cpp
 class Solution {
 public:
     bool isPalindrome(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
+
         string s1 = "";
         
         for(int i = 0; i < s.size(); i++)
@@ -66,7 +70,7 @@ public:
             {
                 s1 += char(int(s[i])+ 32);
             }
-
+            else return false;
 
         }
 
