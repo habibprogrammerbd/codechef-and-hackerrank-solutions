@@ -42,43 +42,30 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-09-15T14:03:08.966Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.2 MB (beats 16.42%)  
+**Submitted:** 2026-09-16T04:30:02.493Z  
 
 ```cpp
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
-
-        int x = 0,y = 0;
+        
         int ans = 0;
+        int count = 0;
 
         for(int i = 0; i < nums.size(); i++)
         {
-            if(nums[i] % 2 == 0) x++;
-            else y++;
-        }
-
-        if(x > y)
-        {
-            for(int i = 0; i < nums.size(); i++)
+            if(count == 0)
             {
-                if(nums[i] % 2 == 0) ans = nums[i];
-                break;
+                ans = nums[i];
             }
-        }
-        else
-        {
-            for(int i = 0; i < nums.size(); i++)
-            {
-                if(nums[i] % 2 != 0) ans = nums[i];
-                break;
-            }
-        }
 
+            if(ans == nums[i]) count++;
+            else count--; 
+                    
+    
+        }
         return ans;
     }
 };
