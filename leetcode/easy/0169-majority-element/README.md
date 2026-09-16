@@ -42,15 +42,17 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.2 MB (beats 16.42%)  
-**Submitted:** 2026-09-16T04:30:02.493Z  
+**Runtime:** 0 ms  
+**Memory:** 8.3 MB  
+**Submitted:** 2026-09-16T04:30:41.164Z  
 
 ```cpp
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         int ans = 0;
         int count = 0;
 
