@@ -36,14 +36,17 @@ Output: ["h","a","n","n","a","H"]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 151 ms (beats 2.06%)  
+**Runtime:** 1 ms (beats 9.61%)  
 **Memory:** 27.4 MB (beats 15.54%)  
-**Submitted:** 2026-09-16T04:45:22.951Z  
+**Submitted:** 2026-09-16T04:45:57.987Z  
 
 ```cpp
 class Solution {
 public:
     void reverseString(vector<char>& s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         
         int left = 0, right = s.size() -1;
         while(left <= right)
