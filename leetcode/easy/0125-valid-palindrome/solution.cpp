@@ -1,6 +1,10 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
+
         string s1 = "";
         
         for(int i = 0; i < s.size(); i++)
@@ -11,7 +15,7 @@ public:
             {
                 s1 += char(int(s[i])+ 32);
             }
-
+            else return false;
 
         }
 
