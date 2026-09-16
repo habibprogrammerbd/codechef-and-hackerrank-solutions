@@ -54,17 +54,42 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:50:04.065Z  
+**Submitted:** 2026-09-16T15:03:41.599Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int a, b;
+        cin >> a >> b;
+        if (a >= b)
+        {
+            cout << 0 << endl;
+        }
+        else
+        {
+            if ((a * 2) <= b)
+            {
+                cout << b << endl;
+            }
+            else
+            {
+                cout << a << endl;
+            }
+        }
+    }
+
+    return 0;
 }
-
 ```
 
 ---
