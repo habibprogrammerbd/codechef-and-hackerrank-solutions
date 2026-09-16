@@ -18,14 +18,7 @@ int main()
         }
         else
         {
-            if ((a * 2) <= b)
-            {
-                cout << b << endl;
-            }
-            else
-            {
-                cout << a << endl;
-            }
+           cout << (b - a) * 2 << endl;
         }
     }
 
