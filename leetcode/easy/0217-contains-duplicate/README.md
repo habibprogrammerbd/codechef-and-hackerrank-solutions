@@ -44,9 +44,9 @@ All elements are distinct.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 294 ms (beats 5.44%)  
-**Memory:** 140.2 MB (beats 5.02%)  
-**Submitted:** 2026-09-17T04:36:00.884Z  
+**Runtime:** 26 ms (beats 88.08%)  
+**Memory:** 82.8 MB (beats 89.19%)  
+**Submitted:** 2026-09-17T04:41:15.446Z  
 
 ```cpp
 class Solution {
@@ -55,15 +55,11 @@ public:
         ios_base::sync_with_stdio(false);
         cin.tie(NULL);
 
-        multiset<int> st;
-        for(int i = 0; i < nums.size(); i++)
+        sort(nums.begin(),nums.end());
+
+        for(int i = 0; i < nums.size() -1; i++)
         {
-            st.insert(nums[i]);
-        }
-        
-        for(int i = 0; i < nums.size(); i++)
-        {
-            if(st.count(nums[i]) >= 2)
+            if(nums[i] == nums[i + 1])
             {
                 return true;
             }
