@@ -22,19 +22,30 @@ public:
 
         sort(nums.begin(),nums.end());
 
-        vector<int> final_ans;
-        int x = nums[0];
+        int x = ans[0];
+        int ans_count = 0;
+        int count = 0;
 
-        for(int i = 0; i < nums.size(); i++)
+        for(int i = 0; i < ans.size(); i++)
         {
             if(ans[i] == x)
             {
-                final_ans.push_back(ans[i]);
+                count++;
                 x++;
             }
-            else break;
+            else
+            {
+                x = ans[i];
+                count = 1;
+                x++;
+            }
+
+            if(ans_count < count)
+            {
+                ans_count = count;
+            }
         }
 
-        return final_ans.size();
+        return ans_count;
     }
 };
