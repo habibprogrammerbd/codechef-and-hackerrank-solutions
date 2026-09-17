@@ -34,14 +34,17 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 33.70%)  
-**Memory:** 9.7 MB (beats 48.41%)  
-**Submitted:** 2026-09-17T04:04:12.687Z  
+**Runtime:** 3 ms (beats 44.92%)  
+**Memory:** 9.3 MB (beats 99.88%)  
+**Submitted:** 2026-09-17T04:04:38.993Z  
 
 ```cpp
 class Solution {
 public:
     bool isAnagram(string s, string t) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        
         sort(s.begin(),s.end());
         sort(t.begin(),t.end());
 
