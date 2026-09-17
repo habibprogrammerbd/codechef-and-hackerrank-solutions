@@ -55,14 +55,17 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 33.89%)  
+**Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 10.3 MB (beats 63.34%)  
-**Submitted:** 2026-09-17T03:49:19.473Z  
+**Submitted:** 2026-09-17T03:49:50.094Z  
 
 ```cpp
 class Solution {
 public:
     string reverseWords(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+
         
         string ans;
         string s1 = "";
