@@ -34,7 +34,7 @@ Explanation: arr3 = 400, which is maximum.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T08:13:08.275Z  
+**Submitted:** 2026-09-24T08:13:35.910Z  
 
 ```cpp
 class Solution {
