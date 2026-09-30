@@ -54,7 +54,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:44:01.598Z  
+**Submitted:** 2026-09-30T14:44:50.837Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,7 +72,7 @@ int main()
         int a,b;
         cin >> a >> b;
 
-        if(b % 2 == 0) cout << "Yes\n";
+        if(b % 2 == 0 || a % 2 == 0) cout << "Yes\n";
         else cout << "No\n";
     }
     
