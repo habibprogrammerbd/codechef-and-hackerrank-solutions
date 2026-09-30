@@ -54,17 +54,30 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:42:00.010Z  
+**Submitted:** 2026-09-30T14:44:01.598Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int a,b;
+        cin >> a >> b;
+
+        if(b % 2 == 0) cout << "Yes\n";
+        else cout << "No\n";
+    }
+    
+    return 0;
 }
-
 ```
 
 ---
