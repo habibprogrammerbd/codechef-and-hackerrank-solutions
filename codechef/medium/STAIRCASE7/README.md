@@ -58,17 +58,50 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:21:29.056Z  
+**Submitted:** 2026-09-30T15:29:43.100Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        vector<int> v(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> v[i];
+        }
+
+        int count = 0;
+        int mx = v[v.size()-1];
+
+        for (int i = v.size()-1; i >=0; i--)
+        {
+            if(mx >= v[i])
+            {
+                mx = v[i];
+            }
+            else
+            {
+                count++;
+            }
+        }
+
+        cout << count << endl;
+        
+    }
+
+    return 0;
 }
-
 ```
 
 ---
