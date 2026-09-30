@@ -64,20 +64,10 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T16:06:39.107Z  
+**Submitted:** 2026-09-30T16:06:54.075Z  
 
 ```c_cpp
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		/
-	}
-}
+# cook your dish here
 
 ```
 
