@@ -61,13 +61,23 @@ Output
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T16:05:45.081Z  
+**Submitted:** 2026-09-30T16:06:39.107Z  
 
-```py
-# cook your dish here
+```c_cpp
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		/
+	}
+}
 
 ```
 
